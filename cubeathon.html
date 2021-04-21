@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Cube-A-Thon</title>
+    <title>Naman Khurana</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -13,7 +13,7 @@
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS
+    <!-- CSSs
     ================================================== -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/vendor.css">
@@ -44,19 +44,22 @@
 
     <!-- header
     ================================================== -->
-    <header class="s-header s-header--blog">
+    <header class="s-header">
         <div class="row">
 
-            <div class="s-header__logo">
-                <a href="index.html">
-                    <img src="images/logo.svg" alt="Homepage">
+<!--            <div class="s-header__logo">
+                <a href="">
+                    <img src="" alt="Homepage">
                 </a>
             </div>
-
+-->
             <nav class="s-header__nav">
                 <ul>
-                    <li><a href="namankhurana.org">Home</a></li>
-                    <li class="current"><a href="index.html">Game Over</a></li>
+                    <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+                    <li><a class="smoothscroll" href="#What">What</a></li>
+                    <li><a class="smoothscroll" href="#How">How</a></li>
+                    <li><a class="smoothscroll" href="#Where">Where</a></li>
+                    <li><a class="smoothscroll" href="#When">When</a></li>
                 </ul>
             </nav>
 
@@ -64,81 +67,168 @@
                 <span class="s-header__menu-icon"></span>
             </a>
 
-            <div class="s-header__search-block">
-
-                <div class="s-header__search">
-                    <form role="search" method="get" class="s-header__search-form" action="#">
-                        <label>
-                            <span class="hide-content">Search for:</span>
-                            <input type="search" class="search-field"  value="" name="s" title="Search for:" >
-                        </label>
-                        <input type="submit" class="search-submit" value="Search">
-                    </form>
-        
-                    <a href="#0" title="Close Search" class="s-header__overlay-close">Close</a>
-                </div>
-    
-                <a class="s-header__search-trigger" href="#0">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 004.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0018 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/></svg>
-                </a>
-
-            </div> <!-- end s-header__search-block -->
-
         </div> <!-- end row -->
     </header> <!-- end s-header -->
 
 
-    <!-- blog content
+    <!-- home
     ================================================== -->
-    <div class="blog-content">
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/photo.jpg" data-natural-width="3000" data-natural-height="2000">
 
-        <div class="row blog-post-wrap">
-            <div class="column large-12">
+        <div class="s-home__content">
 
-                <article class="blog-post">
+            <div class="s-home__slider">
 
-                    <div class="blog-post__header">
-                        <h1 class="blog-post__title">Cube-A-Thon</h1>
-                        
-                        <div class="blog-post__meta">
+                <div class="s-home__slide s-home__slide--1">
+                    <div class="row">
+                        <div class="column large-12 s-home__slide-text">
+                            <h2>
+                            <span>Cube-A-Thon</span>
+                            <p> 
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end s-home__slide -->
 
-                            <div class="blog-post__date">November 21, 2020</div>
-          
-                         </div>
-                    </div> <!-- blog-post__header -->
+                <div class="s-home__slide s-home__slide--2">
+                    <div class="row">
+                        <div class="column large-12 s-home__slider-text">
+                             <h2>
+                            <span>Cube-A-Thon</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div> <!-- end s-home__slide -->
 
-                   
-                    <div class="blog-post__content">
+            </div> <!-- end s-home__slider -->
 
-                       <p class="lead drop-cap">
-                        Cube-A-Thon is a very simple game in which you are a 
-                        cube and you have to avoid other black cubes which are in 
-                        your path. This is a very small game and will not be updated
-                        consistintly. This is the first game that I have created using
-                        the Unity Game Engine. 
-                        </p>
+        </div> <!-- end s-home__content -->
 
-                        <p>
-                        To download this game use <a href="https://namankhurana.itch.io/cube-a-thon">this link.</a> For game hosting I have used 
-                        a site called itch.io. Click <a href="game-downloading.html">this link</a> to learn how to install the game 
-                        from itch.io.
-                        </p>
+        <div class="s-home__nav-arrows">
+            <div class="s-home__arrow-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"/></svg>
+            </div>
+            <div class="s-home__arrow-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.293 17.293l1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/></svg>
+            </div>
+        </div> <!-- end s-home__nav-arrows -->
 
-                        <a href="index.html"> Back </a>
+        <div class="s-home__line"></div>
 
-                        <p>
-                        
+    </section> <!-- end s-home -->
 
-                    </div> <!-- end blog-post__content -->
+
+    <!-- CTA
+    ================================================== -->
+    <section id="What" class="s-cta ss-dark">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column">
+                <h2 class="section-desc">
+                    What (is it).
+                </h2>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row cta-content" data-aos="fade-up">
+            <div class="column">
+                <p>
+                Cube-A-Thon is a simple game in which you have to avoid black blocks and
+                get to the end of the level. This game was the first game that I have 
+                made in Unity. This will not be updated. 
+                </p>
 
                 
+            </div>
+        </div> <!-- end ad-content -->
 
-                          
+    </section> <!-- end s-cta -->
 
-    
-   
-            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
-                <span>© Copyright Kreative 2020</span> 
+    <br/>
+    <!-- CTA
+    ================================================== -->
+    <section id="How" class="s-cta ss-dark">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column">
+                <h2 class="section-desc">
+                    How (to play).
+                </h2>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row cta-content" data-aos="fade-up">
+            <div class="column">
+                <p>
+                To play go to the download link and then choose your Operating System. 
+                Click Download. Click the button below to get more detailed 
+                instructions on your operating system. 
+                </p>
+
+                <a href="how.html" class="btn h-full-width">Get more details</a>
+            </div>
+        </div> <!-- end ad-content -->
+
+    </section> <!-- end s-cta -->
+
+    <br/>
+
+    <!-- CTA
+    ================================================== -->
+    <section id="Where" class="s-cta ss-dark">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column">
+                <h2 class="section-desc">
+                    Where (to get).
+                </h2>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row cta-content" data-aos="fade-up">
+            <div class="column">
+                <p>
+                To get the game click the button below and you will be redirected
+                to itch.io. Follow the directions above to download the game.  
+                </p>
+
+                <a href="cubeathon-how.html" class="btn h-full-width">Get more details</a>
+            </div>
+        </div> <!-- end ad-content -->
+
+    </section> <!-- end s-cta -->
+
+   <br/>
+
+    <!-- CTA
+    ================================================== -->
+    <section id="When" class="s-cta ss-dark">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column">
+                <h2 class="section-desc">
+                   When (was it released)
+                </h2>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row cta-content" data-aos="fade-up">
+            <div class="column">
+                <p>
+                The game Cube-A-Thon was relased on the date of 
+                November 22, 2020. 
+                </p>
+
+                
+            </div>
+        </div> <!-- end ad-content -->
+
+    </section> <!-- end s-cta -->
+
+    <footer class="s-footer">
+      
+      	     <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>Copyright © Naman Khurana 2020</span> 
                 <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
             </div>
         </div>
